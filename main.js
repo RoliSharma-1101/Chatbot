@@ -205,7 +205,7 @@ async function showBotMessages(messageArray) {
 
     div.innerHTML = `
       <div class="message-meta">
-        <span class="message-icon"><img src="assets/favicon-32x32.png" alt="UPSIDA" style="width: 20px; height: 20px; vertical-align: middle;"></span>
+        <span class="message-icon"><img src="assets/bot.png" alt="UPSIDA" style="width: 20px; height: 20px; vertical-align: middle;"></span>
         <span class="message-timestamp">${time}</span>
       </div>
       <div class="message-content">
