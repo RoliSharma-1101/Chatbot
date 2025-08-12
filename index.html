@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" type="image/png" href="assets/favicon-32x32.png">
+  <title>Grievance Redressal System</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+  <div class="chat-container">
+    <div class="chat-header">
+      <img src="assets/UPSIDA.png" alt="Bot Icon" class="header-logo" />
+      <div class="header-title-group">
+        <div class="header-title">Grievance Redressal </div>
+        <div class="header-status-row">
+          <span class="status-dot"></span>
+          <span class="header-online">Online</span>
+        </div>
+      </div>
+    </div>
+    <div class="chat-logs" id="chatlogs"></div>
+    <div class="chat-input">
+      <input type="text" id="userInput" placeholder="Type your message..." autocomplete="off" />
+      <button id="micBtn" type="button" title="Click to speak / बोलने के लिए क्लिक करें">
+        <i class="fa-solid fa-microphone"></i>
+      </button>
+      <button id="sendBtn" type="button">
+        <i class="fa-solid fa-paper-plane"></i>
+      </button>
+    </div>
+  </div>
+  <!-- Load scripts at the end of body -->
+  <script src="api.js"></script>
+  <script src="main.js"></script>
+
+  <!-- Speech Recognition UI -->
+  <div id="speech-recognition-ui" class="hidden">
+    <div class="speech-ui-container">
+      <div class="mic-icon-container">
+        <i class="fas fa-microphone"></i>
+      </div>
+      <div class="waveform-container">
+        <!-- The waveform will be generated dynamically with JS -->
+      </div>
+      <p class="listening-text">Listening...</p>
+    </div>
+  </div>
+
+</body>
+
+</html>
